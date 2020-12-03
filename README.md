@@ -30,23 +30,16 @@ Deep Pictorial Gaze Estimation
 
 ## Installing dependencies
 
-Run (with `sudo` appended if necessary),
+#### Note
+this is based on tensorflow 1 library, which only supported until python 3.7
+So best way to install this is create a python 3.7 env with conda and follow the instructions.
+
 ```
+create a python 3.7 env with conda
+activate the conda envirenment
+pip install tensorflow==1.15.4
 python3 setup.py install
 ```
-
-Note that this can be done within a [virtual environment](https://docs.python.org/3/tutorial/venv.html). In this case, the sequence of commands would be similar to:
-```
-    mkvirtualenv -p $(which python3) myenv
-    python3 setup.py install
-```
-
-when using [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/).
-
-### Tensorflow
-Tensorflow is assumed to be installed separately, to allow for usage of [custom wheel files](https://github.com/mind/wheels) if necessary.
-
-Please follow the official installation guide for Tensorflow [here](https://www.tensorflow.org/install/).
 
 ## Getting pre-trained weights
 To acquire the pre-trained weights provided with this repository, please run:
